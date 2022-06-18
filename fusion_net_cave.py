@@ -2,7 +2,7 @@
 """
 Created on Sun Dec 26 11:35:47 2021
 
-@author: DELL
+@author: lk
 """
 
 #%%
@@ -307,7 +307,7 @@ def fusion_net_MAE3(M_input, P_input , H_input):
       
     ######################## H Layer 1  
     with tf.variable_scope('layer1_H'):
-        weights  = tf.get_variable("w1",[3,3,31,31],initializer=tf.truncated_normal_initializer(stddev=1e-3))            ###########################
+        weights  = tf.get_variable("w1",[3,3,31,31],initializer=tf.truncated_normal_initializer(stddev=1e-3))        
         bias     = tf.get_variable("b1",[31],initializer=tf.constant_initializer(0.0))
         conv1_H  = tf.nn.conv2d(H_filter, weights, strides=[1,1,1,1], padding='SAME') + bias
         conv1_H  = tf.nn.relu(conv1_H)    # 31
@@ -927,7 +927,7 @@ def fusion_net_MAE6(M_input, P_input , H_input):
          
     ######################## H Layer 1  
     with tf.variable_scope('layer1_H'):
-        weights  = tf.get_variable("w1",[3,3,31,31],initializer=tf.truncated_normal_initializer(stddev=1e-3))            ###########################
+        weights  = tf.get_variable("w1",[3,3,31,31],initializer=tf.truncated_normal_initializer(stddev=1e-3))             
         bias     = tf.get_variable("b1",[31],initializer=tf.constant_initializer(0.0))
         conv1_H  = tf.nn.conv2d(H_filter, weights, strides=[1,1,1,1], padding='SAME') + bias
         conv1_H  = tf.nn.relu(conv1_H)    # 31
@@ -994,9 +994,7 @@ def fusion_net_MAE6(M_input, P_input , H_input):
     mix_H_add = conv4_H   
     print('mix_H_add',mix_H_add.shape) 
     return mix_H_add
-
-#%%
-
+ 
 
 
 
