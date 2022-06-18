@@ -1,5 +1,6 @@
 # HyperNet: A deep network for hyperspectral, multispectral, and panchromatic image fusion
 
+![image](https://github.com/likun97/HyperNet/blob/master/20220618153614.png)
 
 If this work is helpful to you, please cite it as：
 
