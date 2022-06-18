@@ -2,7 +2,7 @@
 """
 Created on Mon Dec 27 16:15:03 2021
 
-@author: DELL
+@author: lk
 """
 
 import os
