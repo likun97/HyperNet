@@ -6,7 +6,7 @@
 ![image](https://github.com/likun97/HyperNet/blob/master/figs/net.png)
 
 # To Train:
-Run "CUDA_VISIBLE_DEVICES=0 python train.py" to train the network.
+Run "python train_demo_cave.py" to train the network for CAVE dataset.
 
 running environment :
 python=3.7, tensorflow-gpu=1.15.0.
