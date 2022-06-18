@@ -5,6 +5,10 @@
 
 ![image](https://github.com/likun97/HyperNet/blob/master/figs/net.png)
 
+
+running environment :
+python=3.7, tensorflow-gpu=1.15.0.
+
 If this work is helpful to you, please cite it as：
 
       @article{li2022hypernet,
